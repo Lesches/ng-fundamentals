@@ -9,7 +9,6 @@ export class EventThumbnailComponent implements OnInit {
 @Input() event:any;
 
 
-
   constructor() { }
 
   ngOnInit(): void {
