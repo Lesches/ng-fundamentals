@@ -19,6 +19,8 @@ event1 = {
     country: 'England'
   }
 } 
+
+
   constructor() { }
 
   ngOnInit(): void {
