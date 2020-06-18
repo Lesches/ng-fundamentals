@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./events-list.component.css']
 })
 export class EventsListComponent implements OnInit {
-event = {
+event1 = {
   id: 1,
   name: 'Angular Contact',
   date: '13/6/2020',
