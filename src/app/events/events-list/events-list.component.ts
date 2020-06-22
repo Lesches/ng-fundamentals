@@ -316,12 +316,12 @@ export class EventsListComponent implements OnInit {
       ]
     }
   ]
-} 
 
 
-  constructor() { }
+
+ constructor() { }
 
   ngOnInit(): void {
-  }
+  } 
 
 }
