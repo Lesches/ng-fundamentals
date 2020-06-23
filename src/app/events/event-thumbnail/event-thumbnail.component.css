@@ -4,4 +4,13 @@
     margin-left: 10px;
 }
 
-.well p {color: #bbb};
+.well p {color: #bbb;
+    }
+
+    .green{
+        color: #030 !important;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
