@@ -7,13 +7,13 @@
             <span *ngSwitchCase="'10:00 am'">(Late Start)</span>
             <span *ngSwitchDefault>(Normal Start)</span></p>
             <p>Cost: ${{event?.price}}</p>
-            <p *ngIf="!event?.location">
+            <p *ngIf="event?.location">
             Location: {{event?.location.address}}
             
             <span class="pad-left">{{event?.location?.city}}, {{event?.location?.country}}</span>
             </p>
 
-            <p *ngIf="!event?.onlineUrl">
+            <p *ngIf="event?.onlineUrl">
                 Online Url: {{event?.onlineUrl}}
                 </p>
 
