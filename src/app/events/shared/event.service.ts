@@ -8,7 +8,9 @@ export class EventService {
 return EVENTS;
   }
 
-  
+ getEvent(id:number){
+   return EVENTS.find(event => event.id == id)
+ } 
   constructor() { }
 }
 
