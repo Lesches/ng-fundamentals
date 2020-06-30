@@ -8,6 +8,7 @@ import { NavbarComponent } from './nav/navbar/navbar.component';
 import { EventDetailsComponent } from './events/event-details/event-details.component';
 import {appRoutes} from './routes';
 import { CreateEventComponent } from './events/create-event/create-event.component';
+import { ErrorComponent } from './errors/error/error.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { CreateEventComponent } from './events/create-event/create-event.compone
     EventThumbnailComponent,
     NavbarComponent,
     EventDetailsComponent,
-    CreateEventComponent
+    CreateEventComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
