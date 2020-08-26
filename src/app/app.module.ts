@@ -10,6 +10,7 @@ import {appRoutes} from './routes';
 import { CreateEventComponent } from './events/create-event/create-event.component';
 import { ErrorComponent } from './errors/error/error.component';
 import { EventService } from './events/shared/event.service';
+import { ProfileComponent } from './user/profile/profile.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { EventService } from './events/shared/event.service';
     NavbarComponent,
     EventDetailsComponent,
     CreateEventComponent,
-    ErrorComponent
+    ErrorComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
