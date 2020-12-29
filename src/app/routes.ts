@@ -11,6 +11,7 @@ export const appRoutes:Routes = [
     {path: 'events/:id', component: EventDetailsComponent, canActivate: [EventRouteActivatorService]},
     {path: '404', component: ErrorComponent},
     {path: '', redirectTo: '/events', pathMatch: 'full'},
-    {path: 'user', loadChildren: './user/user.module#UserModule'}
-
+   // {path: 'user', loadChildren: './user/user.module#UserModule'}
+   {path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule)},
+// https://www.techiediaries.com/angular-lazy-load-module-example/
 ]
