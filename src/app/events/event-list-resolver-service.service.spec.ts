@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { EventListResolverServiceService } from './event-list-resolver-service.service';
+import { EventListResolverService } from './event-list-resolver-service';
 
 describe('EventListResolverServiceService', () => {
-  let service: EventListResolverServiceService;
+  let service: EventListResolverService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(EventListResolverServiceService);
+    service = TestBed.inject(EventListResolverService);
   });
 
   it('should be created', () => {

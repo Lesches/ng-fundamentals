@@ -6,7 +6,7 @@ import {map} from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class EventListResolverServiceService {
+export class EventListResolverService {
 
    constructor(private eventService: EventService) { }
 
