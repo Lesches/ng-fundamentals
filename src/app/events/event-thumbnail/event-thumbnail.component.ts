@@ -1,4 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { IEvent } from '../shared';
+
 
 @Component({
   selector: 'app-event-thumbnail',
@@ -6,7 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./event-thumbnail.component.css']
 })
 export class EventThumbnailComponent implements OnInit {
-@Input() event:any;
+@Input() event:IEvent;
 
 
 getStartTimeStyle():any {
