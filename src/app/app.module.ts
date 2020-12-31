@@ -7,6 +7,8 @@ import { NavbarComponent } from './nav/navbar/navbar.component';
 import {appRoutes} from './routes';
 import { ErrorComponent } from './errors/error/error.component';
  import { ProfileComponent } from './user/profile/profile.component';
+import { ToasterService } from './common/toaster.service';
+import { AuthService } from './user/auth.service';
 
 
 @NgModule({
@@ -24,7 +26,13 @@ import { ErrorComponent } from './errors/error/error.component';
     BrowserModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [{
+  providers: [
+    EventService,
+    ToasterService,
+    EventRouteActivatorService,
+    EventListResolverService,
+    AuthService,
+    {
     provide: 'canDeactivateCreateEvent', useValue: checkDirtyState
   }],
   bootstrap: [AppComponent]
