@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './nav/navbar/navbar.component';
 import {appRoutes} from './routes';
 import { ErrorComponent } from './errors/error/error.component';
- import { ProfileComponent } from './user/profile/profile.component';
+// import { ProfileComponent } from './user/profile/profile.component';
 import { ToasterService } from './common/toaster.service';
 import { AuthService } from './user/auth.service';
 
@@ -20,7 +20,7 @@ import { AuthService } from './user/auth.service';
     EventDetailsComponent,
     CreateEventComponent,
     ErrorComponent,
-  ProfileComponent
+ // ProfileComponent
   ],
   imports: [
     BrowserModule,
