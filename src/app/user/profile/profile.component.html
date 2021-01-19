@@ -3,7 +3,7 @@
   <hr>
   <div class="col-md-4">
     <form [formGroup]="profileForm" (ngSubmit)="saveProfile(profileForm.value)" autocomplete="off" novalidate>
-      <div class="form-group" [ngClass]="{'error' : !validateFirstName}">
+      <div class="form-group" [ngClass]="{'error' : !validateFirstName()}">
         <label for="firstName">First Name:</label>
         <em *ngIf="!validateFirstName()">Required</em>
         <input formControlName="firstName" id="firstName" type="text" class="form-control" placeholder="First Name..." />
