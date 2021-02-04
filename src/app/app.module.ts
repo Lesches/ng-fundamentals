@@ -9,6 +9,7 @@ import { ErrorComponent } from './errors/error/error.component';
 // import { ProfileComponent } from './user/profile/profile.component';
 import { ToasterService } from './common/toaster.service';
 import { AuthService } from './user/auth.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,6 +25,8 @@ import { AuthService } from './user/auth.service';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [

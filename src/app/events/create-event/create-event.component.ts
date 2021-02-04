@@ -7,9 +7,13 @@ import {Router} from '@angular/router';
   styleUrls: ['./create-event.component.css']
 })
 export class CreateEventComponent implements OnInit {
-  
+  newEvent
 isDirty:boolean = true;
   constructor(private router:Router) { }
+
+  saveEvent(formValues){
+    console.log(formValues);
+  }
 
   cancel() {
 this.router.navigate(['/events']);
