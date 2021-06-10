@@ -7,7 +7,12 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
   styleUrls: ['./create-session.component.css']
 })
 export class CreateSessionComponent implements OnInit {
-
+  newSessionForm: FormGroup
+  name: FormControl
+  presenter: FormControl
+  duration: FormControl
+  level: FormControl
+  abstract: FormControl
   constructor() { }
 
   ngOnInit(): void {
@@ -15,7 +20,15 @@ export class CreateSessionComponent implements OnInit {
     this.presenter = new FormControl('', Validators.required)
     this.duration = new FormControl('', Validators.required)
     this.level = new FormControl('', Validators.required)
-    this.abstract = new FormControl('', Validators.required)
+    this.abstract = new FormControl('', [Validators.required, Validators.maxLength(400)])
+
+    this.newSessionForm = new FormGroup({
+      name: this.name,
+      presenter: this.presenter,
+      duration: this.duration,
+      level: this.level,
+      abstract: this.abstract
+    })
   }
 
 }
