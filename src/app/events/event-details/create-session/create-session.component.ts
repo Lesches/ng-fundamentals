@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {ISession} from '../../index'
 
 @Component({
   selector: 'app-create-session',
@@ -29,6 +30,19 @@ export class CreateSessionComponent implements OnInit {
       level: this.level,
       abstract: this.abstract
     })
+  }
+
+  saveSession(formValues){
+    let session:ISession = {
+      id: undefined,
+      name: formValues.name,
+      presenter: formValues.presenter,
+      duration: +formValues.duration,
+      level: formValues.level,
+      abstract: formValues.abstract,
+      voters: []
+    }
+    console.log(session)
   }
 
 }
