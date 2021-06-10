@@ -10,6 +10,7 @@ import { ErrorComponent } from './errors/error/error.component';
 import { ToasterService } from './common/toaster.service';
 import { AuthService } from './user/auth.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateSessionComponent } from './events/event-details/create-session/create-session.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EventDetailsComponent,
     CreateEventComponent,
     ErrorComponent,
+    CreateSessionComponent,
  // ProfileComponent
   ],
   imports: [
