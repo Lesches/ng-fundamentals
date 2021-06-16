@@ -4,3 +4,4 @@ export * from './event-thumbnail/event-thumbnail.component'
 export * from './event-list-resolver-service'
 export * from './events-list/events-list.component'
 export * from './shared/index'
+
