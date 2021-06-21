@@ -11,6 +11,7 @@ import { ToasterService } from './common/toaster.service';
 import { AuthService } from './user/auth.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreateSessionComponent } from './events/event-details/create-session/create-session.component';
+import { SessionListComponent } from './events/event-details/session-list/session-list.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { CreateSessionComponent } from './events/event-details/create-session/cr
     CreateEventComponent,
     ErrorComponent,
     CreateSessionComponent,
+    SessionListComponent
  // ProfileComponent
   ],
   imports: [
