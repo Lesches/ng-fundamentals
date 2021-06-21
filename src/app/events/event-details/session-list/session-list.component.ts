@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ISession } from '../../index';
+import { ISession } from '../../shared/index';
 
 @Component({
   selector: 'app-session-list',
@@ -7,7 +7,7 @@ import { ISession } from '../../index';
   styleUrls: ['./session-list.component.css']
 })
 export class SessionListComponent implements OnInit {
-@Input() sessions: ISession[]
+@Input() sessions:ISession[]
   constructor() { }
 
   ngOnInit(): void {
