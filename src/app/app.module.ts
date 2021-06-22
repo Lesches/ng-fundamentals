@@ -10,8 +10,7 @@ import { ErrorComponent } from './errors/error/error.component';
 import { ToasterService } from './common/toaster.service';
 import { AuthService } from './user/auth.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-//import { CreateSessionComponent } from './events/event-details/create-session/create-session.component';
-//import { SessionListComponent } from './events/event-details/session-list/session-list.component';
+import { CollapsibleWellComponent } from './common/collapsible-well/collapsible-well.component';
 
 
 @NgModule({
@@ -24,7 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CreateEventComponent,
     ErrorComponent,
     CreateSessionComponent,
-    SessionListComponent
+    SessionListComponent,
+    CollapsibleWellComponent
  // ProfileComponent
   ],
   imports: [
