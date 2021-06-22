@@ -1,16 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import {EventsListComponent, EventThumbnailComponent, EventDetailsComponent, CreateEventComponent, EventService, EventListResolverService, EventRouteActivatorService, SessionListComponent, CreateSessionComponent} from './events/index'
+import {EventsListComponent, EventThumbnailComponent, EventDetailsComponent, CreateEventComponent, EventService, EventListResolverService, EventRouteActivatorService, SessionListComponent, CreateSessionComponent, DurationPipe} from './events/index'
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './nav/navbar/navbar.component';
 import {appRoutes} from './routes';
 import { ErrorComponent } from './errors/error/error.component';
-// import { ProfileComponent } from './user/profile/profile.component';
 import { ToasterService } from './common/toaster.service';
 import { AuthService } from './user/auth.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CollapsibleWellComponent } from './common/collapsible-well/collapsible-well.component';
+//import { DurationPipe } from './events/shared/duration.pipe';
 
 
 @NgModule({
@@ -24,8 +24,8 @@ import { CollapsibleWellComponent } from './common/collapsible-well/collapsible-
     ErrorComponent,
     CreateSessionComponent,
     SessionListComponent,
-    CollapsibleWellComponent
- // ProfileComponent
+    CollapsibleWellComponent,
+    DurationPipe
   ],
   imports: [
     BrowserModule,
