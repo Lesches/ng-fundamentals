@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {EventService} from '../shared/index';
 
@@ -8,6 +8,7 @@ import {EventService} from '../shared/index';
   styleUrls: ['./create-event.component.css']
 })
 export class CreateEventComponent implements OnInit {
+ 
   newEvent
 isDirty:boolean = true;
   constructor(private router:Router, private eventService: EventService) { }

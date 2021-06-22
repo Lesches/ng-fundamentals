@@ -23,8 +23,12 @@ return subject;
   EVENTS.push(event)
 }
   constructor() { }
-}
 
+updateEvent(event) {
+let index = EVENTS.findIndex(x => x.id = event.id)
+EVENTS[index] = event
+}
+}
 
 
 const EVENTS: IEvent[] = [
