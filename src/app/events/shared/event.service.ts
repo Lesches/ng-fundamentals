@@ -1,6 +1,4 @@
 import { Injectable, EventEmitter } from '@angular/core';
-//import { EventEmitter } from 'events';
-import { Session } from 'inspector';
 import {Observable, Subject} from 'rxjs';
 import { IEvent, ISession } from './event.model';
 
