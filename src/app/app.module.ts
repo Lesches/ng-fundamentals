@@ -6,12 +6,13 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './nav/navbar/navbar.component';
 import {appRoutes} from './routes';
 import { ErrorComponent } from './errors/error/error.component';
-import { TOASTR_TOKEN, Toastr } from './common/toaster.service';
+import { JQ_TOKEN, TOASTR_TOKEN, Toastr, CollapsibleWellComponent} from './common/index';
 import { AuthService } from './user/auth.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CollapsibleWellComponent } from './common/collapsible-well/collapsible-well.component';
+//
 
-declare let toastr:Toastr
+let toastr:Toastr = window['toaster']
+let jQuery = window['$']
 
 
 @NgModule({
