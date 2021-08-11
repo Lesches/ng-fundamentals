@@ -9,6 +9,8 @@ import { ErrorComponent } from './errors/error/error.component';
 import { JQ_TOKEN, TOASTR_TOKEN, Toastr, CollapsibleWellComponent} from './common/index';
 import { AuthService } from './user/auth.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SimpleModalComponent } from './common/simple-modal/simple-modal.component';
+import {ModalTrigerDirective} from './common/modalTrigger.directive'
 //
 
 let toastr:Toastr = window['toaster']
@@ -27,7 +29,9 @@ let jQuery = window['$']
     CreateSessionComponent,
     SessionListComponent,
     CollapsibleWellComponent,
-    DurationPipe
+    DurationPipe,
+    SimpleModalComponent,
+    ModalTrigerDirective
   ],
   imports: [
     BrowserModule,
@@ -38,6 +42,7 @@ let jQuery = window['$']
   providers: [
     EventService,
     {provide: TOASTR_TOKEN, useValue: toastr},
+    {provide: JQ_TOKEN, useValue: jQuery},
     EventRouteActivatorService,
     EventListResolverService,
     AuthService,
