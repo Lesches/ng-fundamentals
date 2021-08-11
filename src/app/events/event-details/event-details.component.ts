@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from '../shared/event.service';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Params} from '@angular/router';
 import { IEvent, ISession } from '../shared';
 
 @Component({
@@ -15,7 +15,11 @@ filterBy:string = 'all'
   constructor(private eventSevice: EventService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-this.event = this.eventSevice.getEvent(+this.route.snapshot.params['id']);
+    this.route.params.forEach((params: Params) => {
+      this.event = this.eventSevice.getEvent(+params['id']);
+      this.addMode = false;
+    })
+
   }
 
   addSession() {
